@@ -1,1 +1,25 @@
-<h1>Hello, world!</h1>
+<h1>My projects</h1>
+
+<section id="projects">
+    <script>
+        let projects = [
+            ['Project 1', 'Description 1'],
+            ['Project 2', 'Description 2'],
+            ['Project 3', 'Description 3']
+        ];
+
+        for (let i = 0; i < projects.length; i++) {
+            const top_div = document.createElement("div");
+
+            const title = document.createElement("h1");
+            title.appendChild(document.createTextNode(projects[i][0]))
+            top_div.appendChild(title)
+
+            const description = document.createElement('p')
+            description.appendChild(document.createTextNode(projects[i][1]))
+            top_div.appendChild(description)
+
+            document.getElementById("projects").appendChild(top_div);
+        }
+    </script>
+</section>
