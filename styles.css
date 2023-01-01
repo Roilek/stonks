@@ -1,3 +1,17 @@
 #projects {
     display: flex;
+    flex-flow: row wrap;
+}
+
+#top {
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+body {
+    align-items: center;
+    text-align: center;
 }
